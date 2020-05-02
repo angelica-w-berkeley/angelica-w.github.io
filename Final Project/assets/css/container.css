@@ -1,0 +1,173 @@
+body {
+  background-color: #D7EAFF;
+  position: relative;
+  margin: 0;
+}
+
+#logo {
+  font-family: Bellota;
+  font-weight: bold;
+  font-size: 50px;
+  color: #7D9BBE;
+  padding-top: 20px;
+  padding-left: 35px;
+  cursor: pointer;
+}
+
+a:link, a:visited {
+  color: #7D9BBE;
+  text-decoration: none;
+}
+
+#counter {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 50%;
+  height: auto;
+}
+
+#items {
+  position: absolute;
+  width: 35%;
+  height: 40%;
+  left: 31.8%;
+  top: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+#cups {
+  width: 50%;
+  cursor: pointer;
+}
+
+#cones {
+  width: 20%;
+  cursor: pointer;
+}
+
+
+#right {
+  font-family: Bellota;
+  font-size: 60px;
+  color: #7D9BBE;
+  position: absolute;
+  left: 95%;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  animation: move 4s cubic-bezier(0.5, 1, 0.89, 1) infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    margin: 0;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+}
+
+.caption {
+  border: 2px solid #bbb;
+    box-sizing: border-box;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cup .caption {
+  background:#ffd6e9;
+  border: 5px solid #E88DBA;
+}
+
+.cupCap {
+  color: #c4588d;
+}
+
+#cone .caption{
+  background-color: #f0c681;
+  border: 5px solid #A57530;
+}
+
+.coneCap {
+  color: #855a1d;
+}
+
+.title {
+  font-family: Bellota;
+  font-weight: bold;
+  font-size: 60px;
+  position: absolute;
+  top: 10%;
+}
+
+.cap {
+  font-family: Karla;
+  font-size: 30px;
+  width: 70%;
+  position: absolute;
+  top: 40%;
+}
+
+.choose {
+  font-family: Bellota;
+  font-size: 50px;
+  position: absolute;
+  top: 78%;
+  cursor: pointer;
+}
+
+.choose:hover {
+  font-weight: bold;
+}
+
+#next {
+  position: absolute;
+  left: 90%;
+  top: 47.5%;
+  width: 120px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+
+.transition-fade {
+  transition: 0.4s;
+  opacity: 1;
+}
+
+html.is-animating .transition-fade {
+  opacity: 0;
+}
+
+@keyframes move {
+  0% {
+    left: 90%;
+  }
+  100% {
+    left: 95%;
+  }
+}

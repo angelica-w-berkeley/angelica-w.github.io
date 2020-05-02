@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <title>Ice Cream</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/flavors.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+    <header>
+      <div id = "logo"><a href = "index.html">Ice Cream</a></div>
+    </header>
+
+    <main id = "swup" class = "transition-fade">
+      <img id = "case" src = "assets/images/case.svg">
+      <div id = "base">
+        <div id = "first" class = "row">
+          <div id = "darkBrown" class = "bin"></div>
+          <div id = "yellow" class = "bin"></div>
+          <div id = "green" class = "bin"></div>
+        </div>
+        <div id = "second" class = "row">
+          <div id = "orange" class = "bin"></div>
+          <div id = "purple" class = "bin"></div>
+          <div id = "lightBrown" class = "bin"></div>
+          <div id = "pink" class = "bin"></div>
+        </div>
+      </div>
+
+      <div id="lightbox-overlay" class="hidden"></div>
+
+      <div class = "flavor hidden" id = "darkCap">
+        <div class="caption">
+          <div class = "title dT">Dark Brown</div>
+          <div class = "cap dT">
+            Sometimes you just need a rich dark chocolate to hit the spot.
+          </div>
+          <div id = "db"class = "choose dT">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "flavor hidden" id = "yellowCap">
+        <div class="caption">
+          <div class = "title yT">Yellow</div>
+          <div class = "cap yT">
+            Vanilla, a classic. Or banana, less of a classic.
+          </div>
+          <div id = "y" class = "choose yT">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "flavor hidden" id = "greenCap">
+        <div class="caption">
+          <div class = "title gT">Green</div>
+          <div class = "cap gT">
+            Ah, mint or matcha, you really can't go wrong. Unless you hate both mint and matcha.
+          </div>
+          <div id = "g" class = "choose gT">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "flavor hidden" id = "orangeCap">
+        <div class="caption">
+          <div class = "title oT">Orange</div>
+          <div class = "cap oT">
+            Orange flavor. Kinda self-explanatory. Technically a sorbet, but we'll let it slide.
+          </div>
+          <div id = "o" class = "choose oT">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "flavor hidden" id = "purpleCap">
+        <div class = "caption">
+          <div class = "title pT">Purple</div>
+          <div class = "cap pT">
+            Pretty to look at. Not quite sure what it tastes like though. Maybe ube. Or lavender?
+          </div>
+          <div id = "pu" class = "choose pT">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "flavor hidden" id = "lightCap">
+        <div class="caption">
+          <div class = "title lT">Light Brown</div>
+          <div class = "cap lT">
+            Replace a cup of coffee with a cup of coffee ice cream. Look at that, dessert for breakfast.
+          </div>
+          <div id = "lb" class = "choose lT">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "flavor hidden" id = "pinkCap">
+        <div class="caption">
+          <div class = "title piT">Pink</div>
+          <div class = "cap piT">
+            Strawberry? Cherry? Raspberry? Watermelon? Pretty much just imagine any red fruit.
+          </div>
+          <div id = "pi" class = "choose piT">CHOOSE</div>
+        </div>
+      </div>
+      <a href = "container.html" class = "transition-fade"><div id = "next" class = "hidden"></div></a>
+      <div id = "right" class = "hidden">></div>
+
+    </main>
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script>
+    const options = {
+        LINK_SELECTOR: 'a',
+        debugMode: true,
+    };
+    const swup = new Swup(options);
+    </script>
+    <!--<script> const swup = new Swup()
+    let options = {
+    LINK_SELECTOR: 'a',
+    debugMode: true,
+};
+var swup = new Swup(options);</script>-->
+    <!--<script src="assets/swup/dist/swup.min.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.min.css"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.min.js"></script>
+
+
+    <script>
+    $(document).ready(function() {
+      $(".animsition-overlay").animsition({
+        inClass: 'overlay-slide-in-top',
+        outClass: 'overlay-slide-out-top',
+        inDuration: 1500,
+        outDuration: 800,
+        linkElement: '.animsition-link',
+        // e.g. linkElement: 'a:not([target="_blank"]):not([href^="#"])'
+        loading: true,
+        loadingParentElement: 'body', //animsition wrapper element
+        loadingClass: 'animsition-loading',
+        loadingInner: '', // e.g '<img src="loading.svg" />'
+        timeout: false,
+        timeoutCountdown: 5000,
+        onLoadEvent: true,
+        browser: [ 'animation-duration', '-webkit-animation-duration'],
+        // "browser" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+        // The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+        overlay : true,
+        overlayClass : 'animsition-overlay-slide',
+        overlayParentElement : 'body',
+        transition: function(url){ window.location.href = url; }
+      });
+    });
+  </script>-->
+  <script src="assets/scripts/script.js"></script>
+  </body>
+
+</html>
