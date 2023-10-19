@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Ice Cream</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/container.css" />
+    <link href="https://fonts.googleapis.com/css?family=Bellota&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <div id = "logo"><a href = "index.html">Ice Cream</a></div>
+    </header>
+
+    <main id = "swup" class = "transition-fade">
+      <img id = "counter" src = "assets/images/counter.svg">
+      <div id = "items">
+        <img id = "cups" src = "assets/images/cups.svg">
+        <img id = "cones" src = "assets/images/cones.svg">
+      </div>
+
+      <div id="overlay" class="hidden"></div>
+
+      <div class = "container hidden" id = "cup">
+        <div class="caption">
+          <div class = "title cupCap">Cup</div>
+          <div class = "cap cupCap">
+            Cup and spoon. Perfect for a mess-free experience.
+          </div>
+          <div id = "cu" class = "choose cupCap">CHOOSE</div>
+        </div>
+      </div>
+      <div class = "container hidden" id = "cone">
+        <div class="caption">
+          <div class = "title coneCap">Cone</div>
+          <div class = "cap coneCap">
+            Crunchy cone loaded with creamy ice cream. What could be better?
+          </div>
+          <div id = "co" class = "choose coneCap">CHOOSE</div>
+        </div>
+      </div>
+      <a href = "finish.html" class = "transition-fade"><div id = "next" class = "hidden"></div></a>
+      <div id = "right" class = "hidden">></div>
+    </main>
+
+
+    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <script>
+    const options = {
+        LINK_SELECTOR: 'a',
+        debugMode: true,
+    };
+    const swup = new Swup(options);
+    </script>
+    <script src="assets/scripts/container.js"></script>
+  </body>
+</html>

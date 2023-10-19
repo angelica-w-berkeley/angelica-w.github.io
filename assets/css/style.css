@@ -1,0 +1,111 @@
+body {
+  background-color: #D7EAFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+
+#logo {
+  cursor: default;
+  font-family: Bellota;
+  font-weight: bold;
+  font-size: 150px;
+  color: #FFFFFF;
+  text-shadow: 0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE,
+              0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE,
+              0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE,
+              0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE,
+              0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE, 0 0 4px #7D9BBE;
+}
+
+#sign {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 200px;
+  width: 270px;
+}
+
+#circle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: #FDDB4E;
+  border: 3px solid #D6AE09;
+  z-index: 2;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#string {
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+}
+
+#string1 {
+  position: absolute;
+  height: 80px;
+  width: 130px;
+  border-bottom: 3px solid #707070;
+  transform: rotate(315deg);
+  transform-origin: bottom left;
+}
+
+#string2 {
+  position: absolute;
+  height: 80px;
+  width: 130px;
+  border-bottom: 3px solid #707070;
+  right: 0%;
+  transform: rotate(45deg);
+  transform-origin: bottom right;
+}
+
+.card {
+  /*width: 220px;
+  height: 120px;*/
+  position: absolute;
+  font-family: Sriracha, cursive;
+  font-size: 64px;
+  color: #707070;
+  background-color: white;
+  border: 5px solid #707070;
+  z-index: 3;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+
+
+#open {
+  padding: 0px 30px 0px 30px;
+}
+
+a:link, a:visited {
+  color: #707070;
+  text-decoration: none;
+}
+
+#back {
+  height: 200px;
+  width: 270px;
+}
+#back {
+  transform-origin: 50% 0;
+  animation: swing 5s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+@keyframes swing{
+  0% {transform: rotate(8deg);}
+  50% {transform: rotate(-5deg);}
+  100% {transform: rotate(8deg);}
+}
